@@ -17,10 +17,21 @@ public class Coordinate {
 	}
 
 	public Coordinate(int x, int y, String blockId) {
-		super();
 		this.x = x;
 		this.y = y;
 		this.blockId = blockId;
+	}
+	
+	public void increaseCoords(int maxX, int maxY) {
+		setX(getX() +1);
+		
+		if (getX() > maxX) {
+			setX(0);
+			setY(getY() + 1);
+			if (getY() > maxY) {
+				setY(maxY);
+			}
+		}
 	}
 
 	public int getX() {

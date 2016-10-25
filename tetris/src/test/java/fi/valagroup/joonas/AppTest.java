@@ -33,6 +33,8 @@ public class AppTest
      */
     public void testApp()
     {
+    	//TetrisApp app = new TetrisApp();
+    	//TetrisApp.testCoords();
         assertTrue( true );
     }
 }
