@@ -22,14 +22,14 @@ public class Coordinate {
 		this.blockId = blockId;
 	}
 	
-	public void increaseCoords(int maxX, int maxY) {
+	public void increaseCoords(int maxX, int maxY) throws CoordOutOfBoundsException {
 		setX(getX() +1);
 		
 		if (getX() > maxX) {
 			setX(0);
 			setY(getY() + 1);
 			if (getY() > maxY) {
-				setY(maxY);
+				throw new CoordOutOfBoundsException(String.format("increasing coords failed, %s bigger than maxY: %s", getY(), maxY));
 			}
 		}
 	}
