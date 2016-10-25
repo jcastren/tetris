@@ -9,8 +9,6 @@ public class TetrisBlock {
 	
 	private List<Coordinate> coords;
 	
-	private boolean fitsTheArray = false;
-	
 	public void addCoordinate(Coordinate coord) {
 		if (coords == null) {
 			coords = new ArrayList<Coordinate>();
@@ -36,14 +34,6 @@ public class TetrisBlock {
 
 	public void setBlockId(String blockId) {
 		this.blockId = blockId;
-	}
-
-	public boolean isFitsTheArray() {
-		return fitsTheArray;
-	}
-
-	public void setFitsTheArray(boolean fitsTheArray) {
-		this.fitsTheArray = fitsTheArray;
 	}
 
 }

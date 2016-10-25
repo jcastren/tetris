@@ -33,6 +33,11 @@ public class Coordinate {
 			}
 		}
 	}
+	
+	public Coordinate clone() {
+		Coordinate newCoord = new Coordinate(getX(), getY(), getBlockId());
+		return newCoord;
+	}
 
 	public int getX() {
 		return x;
