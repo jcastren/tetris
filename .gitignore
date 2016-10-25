@@ -1,0 +1,5 @@
+tetris/.classpath
+tetris/target/classes/META-INF/maven/fi.valagroup.joonas/tetris/pom.properties
+tetris/target/classes/fi/valagroup/joonas/TetrisApp.class
+tetris/target/classes/fi/valagroup/joonas/TetrisArray.class
+tetris/target/classes/fi/valagroup/joonas/TetrisBlock.class
